@@ -7,9 +7,12 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.springframework.stereotype.Repository;
+
 import com.gus.demobasic.model.User;
 import com.gus.demobasic.model.User.Gender;
 
+@Repository
 public class FakeDataDao implements UserDao {
   private static Map<UUID, User> database;
   static {
